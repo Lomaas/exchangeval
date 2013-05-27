@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        <script src="script.js"></script>
+</head>
+<body>  
+        <div data-role="header">
+            <h1>Currency Exchanger</h1>
+        </div>
+
+        <label for="number">Exchange:</label>
+        <input type="number" data-clear-btn="true" name="number" id="valueNumber" value="100">
+
+        <label for="fromValuta">From:</label>
+        <select name="select-native-1" id="fromValuta">
+          <optgroup label="Popular">
+            <option value="EUR">Euro</option>
+            <option value="GBP">British pound</option>
+            <option value="USD">US Dollar</option>
+          </optgroup>
+          <optgroup label="Alphabetic">
+            <option value="DKK">Danish Krone</option>
+
+            <option value="NOK">Norwegian kroner</option>
+            <option value="SEK">Swedish krona</option>
+            <option value="UAH">Ukraine Hryvnias</option>
+            <option value="TRY">New Turkish Lira</option>
+        </optgroup>
+        </select>
+
+        <label for="toValuta">Basic:</label>
+        <select id="toValuta">
+           <optgroup label="Popular">
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">British pound</option>
+          </optgroup>
+          <optgroup label="Alphabetic">
+            <option value="DKK">Danish Krone</option>
+
+            <option value="NOK">Norwegian kroner</option>
+            <option value="SEK">Swedish krona</option>
+            <option value="UAH">Ukraine Hryvnias</option>
+            <option value="TRY">New Turkish Lira</option>
+        </optgroup>
+        </select>
+        </select>
+
+        <button href="#" data-role="button" data-theme="a" data-inline="true" onclick="getNextImage()">Convert</button>
+
+        <div id="convertedAmount"> </div>
+
+        <div id="currentRates"> </div>
+</body>
+</html>
