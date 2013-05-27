@@ -3,6 +3,7 @@ package com.example.exchangevaluta;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.Window;
 import android.webkit.WebView;
 
 public class ExchangeActivity extends Activity {
@@ -10,6 +11,7 @@ public class ExchangeActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_exchange);
         WebView webView = (WebView) findViewById(R.id.webView1);
         webView.getSettings().setBuiltInZoomControls(true);
