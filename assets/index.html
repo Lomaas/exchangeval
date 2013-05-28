@@ -11,6 +11,7 @@
 <body>  
         <div data-role="header">
             <h1>Currency Exchanger</h1>
+            <a href="#" data-icon="gear" class="ui-btn-right">Options</a>
         </div>
 
         <label for="number">Exchange:</label>
@@ -25,7 +26,6 @@
           </optgroup>
           <optgroup label="Alphabetic">
             <option value="DKK">Danish Krone</option>
-
             <option value="NOK">Norwegian kroner</option>
             <option value="SEK">Swedish krona</option>
             <option value="UAH">Ukraine Hryvnias</option>
@@ -33,7 +33,7 @@
         </optgroup>
         </select>
 
-        <label for="toValuta">Basic:</label>
+        <label for="toValuta">To:</label>
         <select id="toValuta">
            <optgroup label="Popular">
             <option value="USD">US Dollar</option>
@@ -42,7 +42,6 @@
           </optgroup>
           <optgroup label="Alphabetic">
             <option value="DKK">Danish Krone</option>
-
             <option value="NOK">Norwegian kroner</option>
             <option value="SEK">Swedish krona</option>
             <option value="UAH">Ukraine Hryvnias</option>
@@ -51,7 +50,7 @@
         </select>
         </select>
 
-        <button href="#" data-role="button" data-theme="a" data-inline="true" onclick="getNextImage()">Convert</button>
+        <button href="#" data-role="button" data-theme="a" data-inline="true" onclick="startExchangeProcess()">Convert</button>
 
         <div id="convertedAmount"> </div>
 
